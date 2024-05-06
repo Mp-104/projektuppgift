@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Character {
-    protected int hp;
+    protected int hp = 0;
     protected String name;
     protected int damage;
     @Id
