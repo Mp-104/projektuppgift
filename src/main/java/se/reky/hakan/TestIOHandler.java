@@ -17,9 +17,21 @@ public class TestIOHandler {
     //Scanner scanner;
 
     @Test
-    public void test1 () {
+    public void testIoHandler () {
         ioHandler("test");
 
         Assertions.assertEquals("test", ioHandler("test").nextLine());
     }
+
+    @Test
+    public void testHasNextInt () {
+
+        ioHandler("1");
+
+        boolean hasInt = ioHandler("2").hasNextInt();
+
+        Assertions.assertTrue(hasInt);
+
+    }
+
 }
