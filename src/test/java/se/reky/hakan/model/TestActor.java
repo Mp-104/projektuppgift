@@ -1,13 +1,11 @@
+package se.reky.hakan.model;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import se.reky.hakan.model.Actor;
-import se.reky.hakan.model.Goblin;
-import se.reky.hakan.model.Guard;
-import se.reky.hakan.model.Player;
 
 public class TestActor {
 
-    Actor actor;
+    //Actor actor;
 
     Guard guard = new Guard();
 

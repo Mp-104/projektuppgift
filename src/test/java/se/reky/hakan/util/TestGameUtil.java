@@ -1,8 +1,9 @@
+package se.reky.hakan.util;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import se.reky.hakan.GameException;
-import se.reky.hakan.util.GameUtil;
 
 public class TestGameUtil {
 

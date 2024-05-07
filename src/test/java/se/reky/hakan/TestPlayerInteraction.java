@@ -1,9 +1,8 @@
+package se.reky.hakan;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import se.reky.hakan.IOHandler;
-import se.reky.hakan.PlayerInteraction;
-import se.reky.hakan.SimplePlayerInteraction;
 import se.reky.hakan.model.Player;
 
 import java.util.Scanner;
