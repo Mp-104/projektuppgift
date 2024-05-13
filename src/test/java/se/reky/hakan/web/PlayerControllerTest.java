@@ -42,7 +42,7 @@ public class PlayerControllerTest {
         driver.get("http://localhost:8080/players");
         List<WebElement> elements = driver.findElements(By.tagName("li"));
 
-        Assertions.assertEquals(2, elements.size());
+        assertEquals(2, elements.size());
     }
 
     @Test
@@ -58,7 +58,7 @@ public class PlayerControllerTest {
         driver.get("http://localhost:8080/players");
         String element = driver.getTitle();
 
-        Assertions.assertEquals("Players List", element);
+        assertEquals("Players List", element);
     }
 
     @Test
@@ -66,7 +66,7 @@ public class PlayerControllerTest {
         driver.get("http://localhost:8080/players");
         WebElement element = driver.findElement(By.tagName("button"));
 
-        Assertions.assertEquals("Logga in", element.getText());
+        assertEquals("Logga in", element.getText());
 
     }
 

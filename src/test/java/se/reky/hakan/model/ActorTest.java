@@ -3,6 +3,8 @@ package se.reky.hakan.model;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class ActorTest {
 
     //Actor actor;
@@ -24,9 +26,9 @@ public class ActorTest {
 
         System.out.println("Guard health " + guard.getHp());
 
-        Assertions.assertEquals(0, goblin.getHp());
+        assertEquals(0, goblin.getHp());
 
-        Assertions.assertEquals(17, guard.getHp());
+        assertEquals(17, guard.getHp());
 
     }
 

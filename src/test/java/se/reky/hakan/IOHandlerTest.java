@@ -5,6 +5,9 @@ import java.util.Scanner;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 public class IOHandlerTest {
 
     private IOHandler ioHandler (String dataForScanner) {
@@ -20,7 +23,7 @@ public class IOHandlerTest {
     public void testIoHandler () {
         ioHandler("test");
 
-        Assertions.assertEquals("test", ioHandler("test").nextLine());
+        assertEquals("test", ioHandler("test").nextLine());
     }
 
     @Test
@@ -30,7 +33,7 @@ public class IOHandlerTest {
 
         boolean hasInt = ioHandler("2").hasNextInt();
 
-        Assertions.assertTrue(hasInt);
+        assertTrue(hasInt);
 
     }
 

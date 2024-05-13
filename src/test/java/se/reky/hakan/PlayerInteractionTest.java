@@ -7,6 +7,8 @@ import se.reky.hakan.model.Player;
 
 import java.util.Scanner;
 
+import static org.junit.Assert.assertEquals;
+
 class PlayerInteractionTest {
 
 //    3) Du ska testa att metoden playerSetup(Player player) i interfacet PlayerInteraction
@@ -42,7 +44,7 @@ class PlayerInteractionTest {
 
         playerInteraction("Player1").setupPlayer(player);
 
-        Assertions.assertEquals("Player1", player.getName());
+        assertEquals("Player1", player.getName());
 
     }
 
@@ -51,7 +53,7 @@ class PlayerInteractionTest {
 
         playerInteraction("Player2").updatePlayerHealth(player,2);
 
-        Assertions.assertEquals(2, player.getHp());
+        assertEquals(2, player.getHp());
 
     }
 
