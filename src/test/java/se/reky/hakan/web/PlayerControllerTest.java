@@ -27,6 +27,7 @@ public class PlayerControllerTest {
     @BeforeEach
     public void setUp () {
         driver = new ChromeDriver();
+        //driver.get("http://localhost:8080/players");
     }
 
     @AfterEach
@@ -61,7 +62,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testButton () {
+    public void testButtonText () {
         driver.get("http://localhost:8080/players");
         WebElement element = driver.findElement(By.tagName("button"));
 
@@ -70,7 +71,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testClick () {
+    public void testClickGetName () {
         driver.get("http://localhost:8080/players");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -81,14 +82,26 @@ public class PlayerControllerTest {
 
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1")));
 
-        List<WebElement> webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.tagName("span")));
-
-        webElements.get(2);
-
         assertTrue(element.isDisplayed());
 
         //top player has name "Max" and 119 experience
         assertEquals("Max", element.getText());
+
+    }
+
+    @Test
+    public void testClickGetExperience () {
+        driver.get("http://localhost:8080/players");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        List <WebElement> elements = driver.findElements(By.tagName("a"));
+
+        elements.get(0).click();
+
+        List<WebElement> webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.tagName("span")));
+
+        webElements.get(2);
 
         assertEquals("119", webElements.get(2).getText());
 
