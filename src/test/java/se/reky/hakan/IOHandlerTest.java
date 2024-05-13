@@ -5,7 +5,7 @@ import java.util.Scanner;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
-public class TestIOHandler {
+public class IOHandlerTest {
 
     private IOHandler ioHandler (String dataForScanner) {
 

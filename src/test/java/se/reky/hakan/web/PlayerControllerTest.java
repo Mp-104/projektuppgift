@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 @Disabled
-public class TestPlayerController {
+public class PlayerControllerTest {
 
     ChromeDriver driver;
 

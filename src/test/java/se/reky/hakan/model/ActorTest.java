@@ -3,7 +3,7 @@ package se.reky.hakan.model;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestActor {
+public class ActorTest {
 
     //Actor actor;
 

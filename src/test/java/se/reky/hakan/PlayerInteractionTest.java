@@ -7,7 +7,7 @@ import se.reky.hakan.model.Player;
 
 import java.util.Scanner;
 
-class TestPlayerInteraction {
+class PlayerInteractionTest {
 
 //    3) Du ska testa att metoden playerSetup(Player player) i interfacet PlayerInteraction
 //      (implementationsklassen är SimplePlayerInteraction) sätter spelarens namn. Använd den

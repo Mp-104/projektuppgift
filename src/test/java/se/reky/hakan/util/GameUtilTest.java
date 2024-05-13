@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import se.reky.hakan.GameException;
 
-public class TestGameUtil {
+public class GameUtilTest {
 
     GameUtil gameUtil;
 
