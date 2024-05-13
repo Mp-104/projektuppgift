@@ -17,7 +17,7 @@ import static org.junit.Assert.assertTrue;
 @Disabled
 public class PlayerControllerTest {
 
-    ChromeDriver driver;
+    private ChromeDriver driver;
 
     @BeforeAll
     public static void init() {

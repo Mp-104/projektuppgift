@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThrows;
 
 public class GameUtilTest {
 
-    GameUtil gameUtil;
+    private GameUtil gameUtil;
 
     @BeforeEach
     public void init () {

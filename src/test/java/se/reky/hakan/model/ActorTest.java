@@ -10,9 +10,9 @@ public class ActorTest {
 
     //Actor actor;
 
-    Guard guard;
+    private Guard guard;
 
-    Goblin goblin;
+    private Goblin goblin;
 
     @BeforeEach
     public void init () {

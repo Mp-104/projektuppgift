@@ -10,7 +10,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ScannerTest {
 
-    Scanner scanner;
+    private Scanner scanner;
 
     @BeforeEach
     public void initialiseScanner () {
