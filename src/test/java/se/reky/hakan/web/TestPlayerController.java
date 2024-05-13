@@ -81,9 +81,16 @@ public class TestPlayerController {
 
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1")));
 
+        List<WebElement> webElements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.tagName("span")));
+
+        webElements.get(2);
+
         assertTrue(element.isDisplayed());
 
+        //top player has name "Max" and 119 experience
         assertEquals("Max", element.getText());
+
+        assertEquals("119", webElements.get(2).getText());
 
     }
 
