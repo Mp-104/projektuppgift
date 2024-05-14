@@ -26,8 +26,10 @@ public class IOHandlerTest {
         assertEquals("test", ioHandler("test").nextLine());
     }
 
+
+
     @Test
-    public void testHasNextInt () {
+    public void shouldReturnTrueIfIntPresent () {
 
         ioHandler("1");
 

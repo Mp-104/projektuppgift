@@ -21,7 +21,7 @@ public class ActorTest {
     }
 
     @Test
-    public void testAttackGuard () {
+    public void shouldReturn0WhenGuardAttacksFor20 () {
 
         System.out.println("Goblin health " + goblin.getHp() + " guard attacks goblin");
 
@@ -34,7 +34,7 @@ public class ActorTest {
     }
 
     @Test
-    public void testAttackGoblin () {
+    public void shouldReturn17WhenGoblinAttacksFor3 () {
 
         goblin.attack(guard);
 

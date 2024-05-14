@@ -40,7 +40,7 @@ class PlayerInteractionTest {
     }
 
     @Test
-    public void testPlayerName () {
+    public void shouldReturnDataForScanner () {
 
         playerInteraction("Player1").setupPlayer(player);
 
@@ -49,7 +49,7 @@ class PlayerInteractionTest {
     }
 
     @Test
-    public void testUpdatePlayerHealth () {
+    public void shouldReturnAssignedHpValue () {
 
         playerInteraction("Player2").updatePlayerHealth(player,2);
 

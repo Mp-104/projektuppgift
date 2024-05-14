@@ -16,7 +16,7 @@ public class GameUtilTest {
     }
 
     @Test
-    public void testThrowGameException () {
+    public void shouldThrowGameExceptionIfNull () {
 
         assertThrows(GameException.class, () -> {gameUtil.toLowerCaseButFirstLetterCapitalized(null);});
 

@@ -19,14 +19,14 @@ public class ScannerTest {
     }
 
     @Test
-    public void testScannerHasNextLine () {
+    public void shouldReturnTrueIfScannerHasStringValue () {
 
         assertTrue(scanner.hasNextLine());
 
     }
 
     @Test
-    public void testScannerNextLine () {
+    public void shouldReturnTest () {
 
         assertEquals("test", scanner.nextLine());
 
