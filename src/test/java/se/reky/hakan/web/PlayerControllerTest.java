@@ -38,7 +38,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testPlayerAmount () {
+    public void shouldReturnAmountOfPlayers () {
         driver.get("http://localhost:8080/players");
         List<WebElement> elements = driver.findElements(By.tagName("li"));
 
@@ -46,7 +46,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testPlayerDisplayed () {
+    public void shouldReturnTrueIfPlayerIsDisplayed () {
         driver.get("http://localhost:8080/players");
         WebElement element = driver.findElement(By.tagName("li"));
 
@@ -54,7 +54,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testTitle () {
+    public void shouldReturnTitleString () {
         driver.get("http://localhost:8080/players");
         String element = driver.getTitle();
 
@@ -62,7 +62,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testButtonText () {
+    public void shouldReturnButtonString () {
         driver.get("http://localhost:8080/players");
         WebElement element = driver.findElement(By.tagName("button"));
 
@@ -71,7 +71,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testClickGetName () {
+    public void shouldReturnPlayerNameOnClickedEndPoint () {
         driver.get("http://localhost:8080/players");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -90,7 +90,7 @@ public class PlayerControllerTest {
     }
 
     @Test
-    public void testClickGetExperience () {
+    public void shouldReturnExpOnClickedEndPoint () {
         driver.get("http://localhost:8080/players");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
