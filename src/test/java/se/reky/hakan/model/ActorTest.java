@@ -14,14 +14,12 @@ public class ActorTest {
 
     private Goblin goblin;
 
-    @BeforeEach
-    public void init () {
-        guard = new Guard();
-        goblin = new Goblin();
-    }
 
     @Test
     public void shouldReturn0WhenGuardAttacksFor20 () {
+
+        guard = new Guard("Guard", 20, 20);
+        goblin = new Goblin("Goblin", 20,3);
 
         System.out.println("Goblin health " + goblin.getHp() + " guard attacks goblin");
 
@@ -35,6 +33,9 @@ public class ActorTest {
 
     @Test
     public void shouldReturn17WhenGoblinAttacksFor3 () {
+
+        guard = new Guard("Guard", 20, 20);
+        goblin = new Goblin("Goblin", 20,3);
 
         goblin.attack(guard);
 

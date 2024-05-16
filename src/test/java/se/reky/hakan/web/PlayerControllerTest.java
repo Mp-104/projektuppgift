@@ -42,7 +42,7 @@ public class PlayerControllerTest {
         driver.get("http://localhost:8080/players");
         List<WebElement> elements = driver.findElements(By.tagName("li"));
 
-        assertEquals(2, elements.size());
+        assertEquals(3, elements.size());
     }
 
     @Test
